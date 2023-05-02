@@ -41,7 +41,7 @@ const printHelp = () => {
 	);
 }
 
-const printWeather = (res: Result, icon: string) => {
+const printWeather = (res: Result, icon: string | undefined) => {
 	console.log(
 		dedent`
 		${chalk.bgYellow(' WEATHER ')} Погода в городе ${res.name}
